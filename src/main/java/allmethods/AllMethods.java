@@ -13,6 +13,7 @@ public class AllMethods extends Setup {
             if(element.isDisplayed())
             {
                 flag=true;
+                System.out.println("hello");
             }
         }catch (NoSuchElementException e){
             flag = false;
