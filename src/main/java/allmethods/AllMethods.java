@@ -1,9 +1,11 @@
+
+
 package allmethods;
 
+import setuppackage.Setup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-import setuppackage.Setup;
 
 public class AllMethods extends Setup {
     public static boolean isDisplayedElement(String xpath){
@@ -13,7 +15,6 @@ public class AllMethods extends Setup {
             if(element.isDisplayed())
             {
                 flag=true;
-                System.out.println("hello");
             }
         }catch (NoSuchElementException e){
             flag = false;
@@ -29,4 +30,3 @@ public class AllMethods extends Setup {
         }
     }
 }
-
